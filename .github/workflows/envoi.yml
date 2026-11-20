@@ -1,0 +1,32 @@
+name: Brouillon TikTok du jour
+on:
+  schedule:
+    - cron: '0 17 * * *'   # 18 h ou 19 h à Paris selon l'heure d'été : envoyer.py vérifie l'heure
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+    inputs:
+      maintenant:
+        description: 'Envoyer le prochain carrousel tout de suite'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency: envoi
+jobs:
+  envoi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Envoyer
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_CLE_JETONS: ${{ secrets.TIKTOK_CLE_JETONS }}
+        run: python3 envoyer.py ${{ inputs.maintenant && '--maintenant' || '' }}
+      - name: Garder la trace
+        if: always()
+        run: |
+          git config user.name "rouhy-bot"
+          git config user.email "rouhy-bot@users.noreply.github.com"
+          git add envoyes.json jetons.enc 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "envoi $(date -u +%F)" && git push)
