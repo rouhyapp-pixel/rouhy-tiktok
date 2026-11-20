@@ -1,0 +1,9 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rouhy · connexion TikTok</title>
+<style>body{font:17px/1.5 -apple-system,system-ui,sans-serif;max-width:560px;margin:60px auto;padding:0 16px;color:#222}code{display:block;padding:14px;background:#f2f2f2;border-radius:8px;word-break:break-all;font-size:15px}</style></head>
+<body><h1>Connexion TikTok</h1><div id="r"></div>
+<script>
+const p=new URLSearchParams(location.search),r=document.getElementById('r');
+if(p.get('code')){r.innerHTML='<p>Copie ce code et colle-le dans le terminal :</p><code></code>';r.querySelector('code').textContent=p.get('code');}
+else if(p.get('error')){r.textContent='Refusé : '+p.get('error')+' '+(p.get('error_description')||'');}
+else{r.textContent='Page de retour de connexion TikTok pour Rouhy.';}
+</script></body></html>
