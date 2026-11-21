@@ -2,7 +2,7 @@
 """Envoie le prochain carrousel de la file d'attente en BROUILLON dans la boîte de réception TikTok
 (API officielle, Content Posting API, post_mode MEDIA_UPLOAD). Tourne sur GitHub Actions, ordi éteint.
 
-  python3 envoyer.py              -> envoie seulement si c'est l'heure (config.json) et rien envoyé aujourd'hui
+  python3 envoyer.py              -> envoie si un créneau de config.json (heures) est passé et pas encore servi aujourd'hui
   python3 envoyer.py --maintenant -> envoie le prochain tout de suite
   python3 envoyer.py --essai      -> montre ce qui serait envoyé, n'appelle pas TikTok
 
@@ -106,10 +106,13 @@ def main():
     if '--maintenant' not in a and '--essai' not in a:
         if maintenant.weekday() not in conf.get('jours', list(range(7))):
             return print(f"pas de post prévu le {maintenant:%A}")
-        if maintenant.hour < conf.get('heure', 19):
-            return print(f"trop tôt ({maintenant:%H:%M}, envoi à {conf.get('heure', 19)} h)")
-        if any(e['date'][:10] == maintenant.date().isoformat() for e in envoyes):
-            return print('déjà envoyé aujourd\'hui')
+        heures = conf.get('heures', [conf.get('heure', 19)])
+        passees = sum(1 for h in heures if maintenant.hour >= h)
+        if not passees:
+            return print(f"trop tôt ({maintenant:%H:%M}, envois à {', '.join(f'{h} h' for h in heures)})")
+        faits = sum(1 for e in envoyes if e['date'][:10] == maintenant.date().isoformat())
+        if faits >= passees:
+            return print(f"déjà {faits} envoi(s) aujourd'hui, prochain créneau plus tard")
 
     suivant = next((p for p in file if p['dossier'] not in deja), None)
     if not suivant:
