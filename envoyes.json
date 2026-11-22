@@ -22,5 +22,11 @@
     "date": "2026-11-22T11:43+01:00",
     "publish_id": "p_inbox_url~v2.7710944154025429014",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "5-pretendant-refuse",
+    "date": "2026-11-22T11:44+01:00",
+    "publish_id": "p_inbox_url~v2.7710944476663007254",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
