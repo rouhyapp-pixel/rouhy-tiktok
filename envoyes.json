@@ -34,5 +34,11 @@
     "date": "2026-11-23T12:49+01:00",
     "publish_id": "p_inbox_url~v2.7711332599142123542",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "7-istikhara-mariage",
+    "date": "2026-11-23T15:10+01:00",
+    "publish_id": "p_inbox_url~v2.7711369042585634838",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
