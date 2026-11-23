@@ -1,8 +1,8 @@
 name: Brouillon TikTok du jour
 on:
   schedule:
-    - cron: '5 10,11,17,18 * * *'
-    # 12 h et 19 h a Paris, ete comme hiver : envoyer.py verifie les creneaux (config.json)
+    - cron: '5 7,8,10,11,13,14,17,18,20,21 * * *'
+    # 9 h, 12 h, 15 h, 19 h et 22 h a Paris, ete comme hiver : envoyer.py verifie les creneaux (config.json)
   workflow_dispatch:
     inputs:
       maintenant:
