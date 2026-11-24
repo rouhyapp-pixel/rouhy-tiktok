@@ -46,5 +46,11 @@
     "date": "2026-11-23T18:10+01:00",
     "publish_id": "p_inbox_url~v2.7711415462441191446",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "9-retraits-mere",
+    "date": "2026-11-24T09:32+01:00",
+    "publish_id": "p_inbox_url~v2.7711652854335277078",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
