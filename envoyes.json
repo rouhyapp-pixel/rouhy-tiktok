@@ -52,5 +52,11 @@
     "date": "2026-11-24T09:32+01:00",
     "publish_id": "p_inbox_url~v2.7711652854335277078",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "10-gendre-magasinier",
+    "date": "2026-11-24T12:24+01:00",
+    "publish_id": "p_inbox_url~v2.7711697129630386198",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
