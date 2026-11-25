@@ -76,5 +76,11 @@
     "date": "2026-11-25T16:38+01:00",
     "publish_id": "p_inbox_url~v2.7712133817120753686",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "13-frere-mariage",
+    "date": "2026-11-25T17:23+01:00",
+    "publish_id": "p_inbox_url~v2.7712145407412996118",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
