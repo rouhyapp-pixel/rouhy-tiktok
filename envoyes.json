@@ -64,5 +64,11 @@
     "date": "2026-11-24T13:13+01:00",
     "publish_id": "p_inbox_url~v2.7711709889176881174",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "12-coussin-belle-soeur",
+    "date": "2026-11-25T16:36+01:00",
+    "publish_id": "p_inbox_url~v2.7712133299669633046",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
