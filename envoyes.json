@@ -94,5 +94,11 @@
     "date": "2026-11-26T10:29+01:00",
     "publish_id": "p_inbox_url~v2.7712409693632907286",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "15-pere-avc",
+    "date": "2026-11-26T18:11+01:00",
+    "publish_id": "p_inbox_url~v2.7712529001813903383",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
