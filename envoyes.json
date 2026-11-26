@@ -100,5 +100,11 @@
     "date": "2026-11-26T18:11+01:00",
     "publish_id": "p_inbox_url~v2.7712529001813903383",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "16-housse-siege",
+    "date": "2026-11-26T19:14+01:00",
+    "publish_id": "p_inbox_url~v2.7712545073971431446",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
