@@ -88,5 +88,11 @@
     "date": "2026-11-26T10:20+01:00",
     "publish_id": "p_inbox_url~v2.7712407505082828822",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "14b-enveloppes-pere",
+    "date": "2026-11-26T10:29+01:00",
+    "publish_id": "p_inbox_url~v2.7712409693632907286",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
