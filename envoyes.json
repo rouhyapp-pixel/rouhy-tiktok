@@ -112,5 +112,11 @@
     "date": "2026-11-26T19:54+01:00",
     "publish_id": "p_inbox_url~v2.7712555249798318102",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "17b-taches-orange",
+    "date": "2026-11-26T20:04+01:00",
+    "publish_id": "p_inbox_url~v2.7712558190650509334",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
