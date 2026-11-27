@@ -136,5 +136,11 @@
     "date": "2026-11-27T18:00+01:00",
     "publish_id": "p_inbox_url~v2.7712897168969025558",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "20b-autre-femme-photos",
+    "date": "2026-11-27T18:07+01:00",
+    "publish_id": "p_inbox_url~v2.7712899040060557334",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
