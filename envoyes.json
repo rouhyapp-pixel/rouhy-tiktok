@@ -124,5 +124,11 @@
     "date": "2026-11-27T17:09+01:00",
     "publish_id": "p_inbox_url~v2.7712883951479883798",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "19-frigo-cadenas",
+    "date": "2026-11-27T17:59+01:00",
+    "publish_id": "p_inbox_url~v2.7712896936491108374",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
