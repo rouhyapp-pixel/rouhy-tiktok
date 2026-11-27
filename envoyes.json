@@ -118,5 +118,11 @@
     "date": "2026-11-26T20:04+01:00",
     "publish_id": "p_inbox_url~v2.7712558190650509334",
     "statut": "SEND_TO_USER_INBOX"
+  },
+  {
+    "dossier": "18-gifle-belle-mere",
+    "date": "2026-11-27T17:09+01:00",
+    "publish_id": "p_inbox_url~v2.7712883951479883798",
+    "statut": "SEND_TO_USER_INBOX"
   }
 ]
